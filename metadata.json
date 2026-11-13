@@ -1,0 +1,6 @@
+{
+  "name": "TerraTrust",
+  "description": "AI-powered environmental data verification platform for analyzing corporate sustainability claims, detecting reporting inconsistencies, and identifying potential greenwashing patterns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

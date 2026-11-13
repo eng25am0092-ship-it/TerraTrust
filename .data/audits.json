@@ -1,0 +1,178 @@
+[
+  {
+    "id": "audit-1794553720923-5reob",
+    "analyzedAt": "2026-11-13T07:08:40.923Z",
+    "submission": {
+      "id": "sub-1794553712263",
+      "companyName": "GreenFuture Industries",
+      "reportingYear": 2025,
+      "previousYear": 2024,
+      "currentMetrics": {
+        "carbonEmissions": 880,
+        "waterConsumption": 65000,
+        "energyConsumption": null,
+        "renewableEnergyPct": 55,
+        "wasteGenerated": 700,
+        "wasteRecycled": 250
+      },
+      "previousMetrics": {
+        "carbonEmissions": 1000,
+        "waterConsumption": 50000,
+        "energyConsumption": null,
+        "renewableEnergyPct": 20,
+        "wasteGenerated": 500,
+        "wasteRecycled": 200
+      },
+      "claims": [
+        "Carbon emissions reduced by 40%.",
+        "Renewable energy usage increased to 55%.",
+        "Water conservation improved by 20%.",
+        "Waste recycling performance improved significantly."
+      ],
+      "sourceType": "sample"
+    },
+    "consistencyScore": 52,
+    "consistencyCategory": "Low consistency",
+    "scoreBreakdown": {
+      "dataConsistency": 22,
+      "evidenceCompleteness": 21,
+      "trendReliability": 9,
+      "claimToDataAlignment": 0
+    },
+    "summaryMetrics": {
+      "totalClaimsAnalysed": 4,
+      "verifiedAgainstData": 0,
+      "claimsRequiringVerification": 4,
+      "suspiciousClaims": 3,
+      "detectedAnomalies": 6,
+      "highSeverityWarnings": 2
+    },
+    "metricDeltas": [
+      {
+        "key": "carbonEmissions",
+        "label": "Carbon Emissions",
+        "unit": "tonnes CO2e",
+        "previousValue": 1000,
+        "currentValue": 880,
+        "absoluteChange": -120,
+        "percentChange": -12,
+        "directionNote": "Reduced by 12%"
+      },
+      {
+        "key": "waterConsumption",
+        "label": "Water Consumption",
+        "unit": "KL",
+        "previousValue": 50000,
+        "currentValue": 65000,
+        "absoluteChange": 15000,
+        "percentChange": 30,
+        "directionNote": "Increased by 30% (unfavorable trend)"
+      },
+      {
+        "key": "energyConsumption",
+        "label": "Total Energy Consumption",
+        "unit": "MWh",
+        "previousValue": null,
+        "currentValue": null,
+        "absoluteChange": null,
+        "percentChange": null,
+        "directionNote": "Insufficient data for year-over-year comparison"
+      },
+      {
+        "key": "renewableEnergyPct",
+        "label": "Renewable Energy Share",
+        "unit": "%",
+        "previousValue": 20,
+        "currentValue": 55,
+        "absoluteChange": 35,
+        "percentChange": 35,
+        "directionNote": "+35 percentage points"
+      },
+      {
+        "key": "wasteGenerated",
+        "label": "Waste Generated",
+        "unit": "tonnes",
+        "previousValue": 500,
+        "currentValue": 700,
+        "absoluteChange": 200,
+        "percentChange": 40,
+        "directionNote": "Increased by 40% (unfavorable trend)"
+      },
+      {
+        "key": "wasteRecycled",
+        "label": "Waste Recycled",
+        "unit": "tonnes",
+        "previousValue": 200,
+        "currentValue": 250,
+        "absoluteChange": 50,
+        "percentChange": 25,
+        "directionNote": "Increased by 25%"
+      }
+    ],
+    "claimEvaluations": [
+      {
+        "claim": "Carbon emissions reduced by 40%.",
+        "metricDomain": "Carbon Emissions",
+        "status": "Potential inconsistency",
+        "claimedSummary": "40% reduction claimed",
+        "actualEvidence": "12% actual reduction (1,000 t → 880 t)",
+        "varianceNote": "28 percentage point gap"
+      },
+      {
+        "claim": "Renewable energy usage increased to 55%.",
+        "metricDomain": "Renewable Energy",
+        "status": "Requires verification",
+        "claimedSummary": "Increased to 55%",
+        "actualEvidence": "20% → 55%, total MWh missing",
+        "varianceNote": "Percentage matches, but total energy records missing"
+      },
+      {
+        "claim": "Water conservation improved by 20%.",
+        "metricDomain": "Water Consumption",
+        "status": "Suspicious pattern",
+        "claimedSummary": "20% conservation improvement",
+        "actualEvidence": "50,000 KL → 65,000 KL (+30% increase)",
+        "varianceNote": "Contradicts data: water usage rose 30%"
+      },
+      {
+        "claim": "Waste recycling performance improved significantly.",
+        "metricDomain": "Waste & Recycling",
+        "status": "Potential inconsistency",
+        "claimedSummary": "Significant recycling improvement claimed",
+        "actualEvidence": "Recycled: 200t → 250t (+25%), but total waste: 500t → 700t",
+        "varianceNote": "Net recycling rate dropped 40% → 35.7%"
+      }
+    ],
+    "findings": [
+      {
+        "id": "TT-F01",
+        "title": "Renewable energy share reported without supporting total energy consumption records",
+        "claimOrDataPoint": "Renewable energy usage (55% in 2025)",
+        "category": "Missing Evidence",
+        "severity": "Medium",
+        "reasonFlagged": "Percentage renewable energy figure was supplied, but total energy consumption (MWh) records are missing.",
+        "numericalEvidence": "Renewable share: 20% → 55% (+35 percentage points); Total energy consumption: Not provided → Not provided",
+        "explanation": "Reporting only a percentage shift in renewable energy without disclosing total energy consumption makes it impossible to verify whether fossil-fuel usage actually decreased or total energy demand surged.",
+        "verificationSteps": [
+          "Submit total electricity and fuel consumption logs in MWh for both 2024 and 2025.",
+          "Provide Renewable Energy Certificates (RECs), utility green-tariff bills, or Power Purchase Agreements (PPAs) supporting the 55% renewable share.",
+          "Clarify whether the renewable energy percentage applies to electricity alone or total energy consumption."
+        ]
+      }
+    ],
+    "recommendations": [
+      "Submit complete 2024 baseline environmental records for missing metrics.",
+      "Provide 2025 operational records for: Total Energy Consumption.",
+      "Provide supporting total energy consumption records (MWh) and renewable energy certificates.",
+      "Explain the operational drivers behind the sharp year-over-year increase in water consumption.",
+      "Report net recycling rate (%) alongside absolute waste tonnage and explain waste growth.",
+      "Verify carbon emission calculations and clarify baseline periods for all percentage claims.",
+      "Investigate and explain the discrepancy between water conservation claims and higher water usage.",
+      "Disclose net waste diversion rate (%) and total waste growth alongside recycled tonnage.",
+      "Provide independent third-party environmental audit documentation (e.g., ISO 14064 or ISAE 3000 assurance)."
+    ],
+    "executiveSummary": "GreenFuture Industries received a preliminary verification score of 52 out of 100 (Low consistency) for its 2025 environmental submission compared against 2024 baseline figures. Key potential inconsistencies include a claimed 40% carbon emissions reduction versus a 12% calculated decrease, a claimed 20% water conservation improvement despite a 30% rise in total water consumption, and a recycling improvement claim that omits a decline in the net recycling rate from 40% to 35.7%. Additionally, the reported increase in renewable energy share to 55% requires further verification because total energy consumption records in MWh are missing for both years.",
+    "analysisEngine": "Gemini AI + Deterministic Rules",
+    "disclaimer": "Experimental Prototype Notice: The TerraTrust Consistency Score is an analytical prototype indicator derived from supplied environmental figures and verification rules. It is not an officially certified environmental rating or legal finding of misconduct."
+  }
+]
